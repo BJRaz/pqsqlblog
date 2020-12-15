@@ -1,6 +1,8 @@
+*.user
 .vs
 .vscode
 .DS_Store
 bin
 obj
+*.swp
 
