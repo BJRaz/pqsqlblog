@@ -9,7 +9,7 @@ namespace postgresql
         static void Main(string[] args)
         {
             var p = new Program();
-            p.Query();
+            p.Query2();
            
         }
 
@@ -24,6 +24,21 @@ namespace postgresql
                 foreach (var item in q)
                 {
                     Console.WriteLine(item.spiller + " " + item.dato);
+                }
+
+            }
+        }
+
+        private void Query2()
+        {
+            using(var ctx = new BloggingContext())
+            {
+
+                var q = from o in ctx.Blogs
+                        select o;
+                foreach (var item in q)
+                {
+                    Console.WriteLine(item.BlogId);
                 }
 
             }

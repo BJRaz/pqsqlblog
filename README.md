@@ -34,7 +34,8 @@ No executable found matching command "dotnet-ef"
 - prøvede da følgende kommando:
 
 ```bash
-dotnet ef dbcontext scaffold "Host=my_host;Database=my_db;Username=my_user;Password=my_pw" Npgsql.EntityFrameworkCore.PostgreSQL````
+dotnet ef dbcontext scaffold "Host=my_host;Database=my_db;Username=my_user;Password=my_pw" Npgsql.EntityFrameworkCore.PostgreSQL
+```
 
 Fejlede med "error at ORDER ..." 
 

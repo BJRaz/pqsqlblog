@@ -11,6 +11,6 @@ namespace postgresql
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseNpgsql("Host=10.0.0.21;Database=brian;Username=brian;Password=brian1234");
+            => optionsBuilder.UseNpgsql("Host=10.0.0.21;Database=blogging;Username=brian;Password=brian1234");
     }
 }
